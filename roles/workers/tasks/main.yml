@@ -1,0 +1,6 @@
+- name: add nodes
+  docker_swarm:
+    state: join
+    advertise_addr:
+    join_token: "{{ tokennode }}"
+    remote_addrs:     

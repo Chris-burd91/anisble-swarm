@@ -1,0 +1,15 @@
+- name: Check if swarm already exists
+  shell: docker node ls
+  ignore_errors: true
+
+- name: Init a new swarm with default parameters
+  docker_swarm:
+    state: present
+
+- name: Get the swarm unlock key
+  docker_swarm_info:
+    unlock_key: yes
+  register:  tokennode 
+
+- debug:
+    var: result.swarm_unlock_key

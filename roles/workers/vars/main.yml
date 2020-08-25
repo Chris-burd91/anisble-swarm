@@ -1,0 +1,3 @@
+# vars file for manager
+tokennode: "{{hostvars.manager}}"
+#hostmanager: "{{ hostvars.managerrst_node.stdout.split('\n')[6]}}"

@@ -1,0 +1,7 @@
+[manager]
+ansible-task-1
+
+[workers]
+ansible-task-2
+ansible-task-3
+
